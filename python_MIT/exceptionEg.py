@@ -1,12 +1,10 @@
-try:
-    a = int(input('enter a number: '))
-    b = int(input('enter another number: '))
-    print('a/b = ', a / b)
-    print('a+b = ', a + b)
-    print('done calculations')
-except ValueError:
-    print('cannot convert to number')
-except ZeroDivisionError:
-    print('division by zero')
-except:
-    print('something went wrong')
+def normalize(numbers):
+    max_number = max(numbers)
+    assert (max_number != 0), "Cannot divide by 0"
+    for i in range(len(numbers)):
+        numbers[i] /= float(max_number)
+        assert (0.0 <= numbers[i] <= 1.0), "output not between 0 and 1"
+    return numbers
+
+
+print(normalize([0, 1, 100]))
