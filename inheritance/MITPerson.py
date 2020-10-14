@@ -1,4 +1,4 @@
-from python_MIT.Person import Person
+from inheritance.Person import Person
 
 
 class MITPerson(Person):

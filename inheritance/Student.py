@@ -1,4 +1,4 @@
-from python_MIT.MITPerson import MITPerson
+from inheritance.MITPerson import MITPerson
 
 
 class Student(MITPerson):
@@ -34,4 +34,7 @@ g1 = Grad('ram kumar')
 t1 = Transferstudent('sham prasad')
 
 print(isStudent(t1))
-print(t1.getAge())
+
+print(t1.nextID)
+print(t1.getID())
+print(u1.getSemNr())
